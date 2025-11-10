@@ -1,0 +1,169 @@
+import { useRef, useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import Crosshair from './Crosshair';
+import { useLenis } from '../hooks/useLenis.jsx';
+import './LogoTarget.css';
+
+export default function LogoTarget() {
+  const containerRef = useRef(null);
+  const logoRef = useRef(null);
+  const [isTargeted, setIsTargeted] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const lenis = useLenis();
+  
+  let targetTimer = null;
+
+  useEffect(() => {
+    const logo = logoRef.current;
+    if (!logo) return;
+
+    const handleMouseEnter = () => {
+      setIsTargeted(true);
+      let currentProgress = 0;
+      
+      targetTimer = setInterval(() => {
+        currentProgress += 2;
+        setProgress(currentProgress);
+        
+        if (currentProgress >= 100) {
+          clearInterval(targetTimer);
+          handleTargetComplete();
+        }
+      }, 20);
+    };
+
+    const handleMouseLeave = () => {
+      setIsTargeted(false);
+      setProgress(0);
+      if (targetTimer) {
+        clearInterval(targetTimer);
+      }
+    };
+
+    logo.addEventListener('mouseenter', handleMouseEnter);
+    logo.addEventListener('mouseleave', handleMouseLeave);
+
+    return () => {
+      logo.removeEventListener('mouseenter', handleMouseEnter);
+      logo.removeEventListener('mouseleave', handleMouseLeave);
+      if (targetTimer) {
+        clearInterval(targetTimer);
+      }
+    };
+  }, []);
+
+  const handleTargetComplete = () => {
+    // Анимация успешного попадания
+    setProgress(100);
+    
+    // Переход к Portfolio секции
+    setTimeout(() => {
+      const portfolioSection = document.getElementById('portfolio');
+      if (portfolioSection && lenis) {
+        lenis.scrollTo(portfolioSection, { offset: -80, duration: 1.5 });
+      } else if (portfolioSection) {
+        portfolioSection.scrollIntoView({ behavior: 'smooth' });
+      }
+      
+      // Сброс прогресса
+      setTimeout(() => {
+        setProgress(0);
+        setIsTargeted(false);
+      }, 500);
+    }, 300);
+  };
+
+  return (
+    <div ref={containerRef} className="logo-target-container">
+      <Crosshair containerRef={containerRef} color="#CBA3FF" />
+      
+      <motion.div
+        ref={logoRef}
+        className={`logo-target ${isTargeted ? 'targeted' : ''}`}
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, delay: 3.5 }}
+      >
+        {/* SVG Логотип NVG */}
+        <svg
+          width="200"
+          height="200"
+          viewBox="0 0 200 200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="logo-target-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#7A33FF" />
+              <stop offset="50%" stopColor="#9F6AFF" />
+              <stop offset="100%" stopColor="#CBA3FF" />
+            </linearGradient>
+          </defs>
+          
+          <text
+            x="50%"
+            y="50%"
+            dy=".35em"
+            textAnchor="middle"
+            fontSize="72"
+            fontFamily="Space Grotesk, sans-serif"
+            fontWeight="700"
+            fill="url(#logo-target-gradient)"
+          >
+            NVG
+          </text>
+          
+          {/* Прицельная окружность */}
+          <circle
+            cx="100"
+            cy="100"
+            r="85"
+            fill="none"
+            stroke="url(#logo-target-gradient)"
+            strokeWidth="2"
+            strokeDasharray="10 5"
+            opacity="0.6"
+            className="target-circle"
+          />
+          
+          {/* Прогресс круг */}
+          {isTargeted && (
+            <circle
+              cx="100"
+              cy="100"
+              r="85"
+              fill="none"
+              stroke="#CBA3FF"
+              strokeWidth="4"
+              strokeDasharray={`${progress * 5.34} 534`}
+              strokeLinecap="round"
+              transform="rotate(-90 100 100)"
+              className="progress-circle"
+            />
+          )}
+        </svg>
+
+        {/* Подсказка */}
+        <motion.div
+          className="target-hint"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isTargeted ? 1 : 0.7 }}
+          transition={{ duration: 0.3 }}
+        >
+          {isTargeted ? `Targeting... ${Math.round(progress)}%` : 'Aim & Hold to Navigate'}
+        </motion.div>
+      </motion.div>
+
+      {/* Инструкция */}
+      <motion.div
+        className="target-instruction"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 4 }}
+      >
+        <div className="instruction-icon">⦿</div>
+        <p>Наведи прицел на логотип и удерживай</p>
+      </motion.div>
+    </div>
+  );
+}
