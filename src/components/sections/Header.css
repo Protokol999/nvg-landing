@@ -214,3 +214,44 @@
 
 .header__actions {
   display: flex;
+
+
+/* Language Switcher Styles */
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-left: auto;
+}
+
+.header__mobile-lang {
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* На мобильных скрываем desktop версию */
+@media (max-width: 768px) {
+  .header__actions {
+    display: none;
+  }
+}
+
+/* Дополнительные улучшения для container */
+@media (min-width: 769px) {
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header__nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from '../LanguageSwitcher';
 import QuickContactForm from '../QuickContactForm';
 import './Header.css';
 
@@ -8,6 +10,7 @@ export default function Header({ onScrollToContact }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isQuickFormOpen, setIsQuickFormOpen] = useState(false);
   const ctaButtonRef = useRef(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,6 +44,7 @@ export default function Header({ onScrollToContact }) {
       transition={{ duration: 0.6, ease: [0.2, 0.8, 0.2, 1] }}
     >
       <div className='header__container container'>
+        <LanguageSwitcher />
         <a
           href='#hero'
           className='header__logo'
@@ -81,7 +85,7 @@ export default function Header({ onScrollToContact }) {
               scrollToSection('services');
             }}
           >
-            Services
+            {t('header.services')}
           </a>
           <a
             href='#portfolio'
@@ -90,7 +94,7 @@ export default function Header({ onScrollToContact }) {
               scrollToSection('portfolio');
             }}
           >
-            Portfolio
+            {t('header.portfolio')}
           </a>
           <a
             href='#process'
@@ -99,7 +103,7 @@ export default function Header({ onScrollToContact }) {
               scrollToSection('process');
             }}
           >
-            Process
+            {t('header.process')}
           </a>
           <a
             href='#pricing'
@@ -108,7 +112,7 @@ export default function Header({ onScrollToContact }) {
               scrollToSection('pricing');
             }}
           >
-            Pricing
+            {t('header.pricing')}
           </a>
           <a
             href='#faq'
@@ -117,34 +121,36 @@ export default function Header({ onScrollToContact }) {
               scrollToSection('faq');
             }}
           >
-            FAQ
+            {t('header.faq')}
           </a>
         </nav>
 
-        <div style={{ position: 'relative' }}>
-          <button
-            ref={ctaButtonRef}
-            className='btn btn--primary header__cta'
-            onClick={() => setIsQuickFormOpen(!isQuickFormOpen)}
-            aria-label='Start your project'
-          >
-            Start Project
-            <svg width='16' height='16' viewBox='0 0 16 16' fill='none'>
-              <path
-                d='M6 12L10 8L6 4'
-                stroke='currentColor'
-                strokeWidth='2'
-                strokeLinecap='round'
-                strokeLinejoin='round'
-              />
-            </svg>
-          </button>
+        <div className='header__actions'>
+          <div style={{ position: 'relative' }}>
+            <button
+              ref={ctaButtonRef}
+              className='btn btn--primary header__cta'
+              onClick={() => setIsQuickFormOpen(!isQuickFormOpen)}
+              aria-label='Start your project'
+            >
+              {t('header.startProject')}
+              <svg width='16' height='16' viewBox='0 0 16 16' fill='none'>
+                <path
+                  d='M6 12L10 8L6 4'
+                  stroke='currentColor'
+                  strokeWidth='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                />
+              </svg>
+            </button>
 
-          <QuickContactForm
-            isOpen={isQuickFormOpen}
-            onClose={() => setIsQuickFormOpen(false)}
-            buttonRef={ctaButtonRef}
-          />
+            <QuickContactForm
+              isOpen={isQuickFormOpen}
+              onClose={() => setIsQuickFormOpen(false)}
+              buttonRef={ctaButtonRef}
+            />
+          </div>
         </div>
 
         <button
@@ -177,7 +183,7 @@ export default function Header({ onScrollToContact }) {
               scrollToSection('services');
             }}
           >
-            Services
+            {t('header.services')}
           </a>
           <a
             href='#portfolio'
@@ -186,7 +192,7 @@ export default function Header({ onScrollToContact }) {
               scrollToSection('portfolio');
             }}
           >
-            Portfolio
+            {t('header.portfolio')}
           </a>
           <a
             href='#process'
@@ -195,7 +201,7 @@ export default function Header({ onScrollToContact }) {
               scrollToSection('process');
             }}
           >
-            Process
+            {t('header.process')}
           </a>
           <a
             href='#pricing'
@@ -204,7 +210,7 @@ export default function Header({ onScrollToContact }) {
               scrollToSection('pricing');
             }}
           >
-            Pricing
+            {t('header.pricing')}
           </a>
           <a
             href='#faq'
@@ -213,10 +219,15 @@ export default function Header({ onScrollToContact }) {
               scrollToSection('faq');
             }}
           >
-            FAQ
+            {t('header.faq')}
           </a>
+
+          <div className='header__mobile-lang'>
+            <LanguageSwitcher />
+          </div>
+
           <button className='btn btn--primary' onClick={onScrollToContact}>
-            Start Project
+            {t('header.startProject')}
           </button>
         </nav>
       </motion.div>

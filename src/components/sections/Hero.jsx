@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import GridScan from '../GridScan';
 import './Hero.css';
 
 export default function Hero({ onScrollToContact, onScrollToPortfolio }) {
   const sectionRef = useRef(null);
   const bgRef = useRef(null);
-
+  const { t } = useTranslation();
   useEffect(() => {
     // Parallax background animation
     const section = sectionRef.current;
@@ -90,22 +91,22 @@ export default function Hero({ onScrollToContact, onScrollToPortfolio }) {
         animate='visible'
       >
         <motion.h1 variants={itemVariants} className='hero__title'>
-          We Build Digital Systems That Work While You Sleep
+          {t('hero.title')}
         </motion.h1>
 
         <motion.p variants={itemVariants} className='hero__subtitle subtitle'>
-          From first click to loyal customer — we automate your entire funnel
-          with custom landing pages, intelligent bots, and data-driven CRM
-          systems. 100+ businesses scaled with us.
+          {t('hero.subtitle')}
         </motion.p>
 
         <motion.div variants={itemVariants} className='hero__cta'>
-          <button
+          <a
+            href='https://t.me/nvg_tech'
+            target='_blank'
+            rel='noopener noreferrer'
             className='btn btn--primary'
-            onClick={onScrollToContact}
             aria-label='Book Free Strategy Call'
           >
-            Book Free Strategy Call
+            {t('hero.bookCall')}
             <svg width='20' height='20' viewBox='0 0 20 20' fill='none'>
               <path
                 d='M7.5 15L12.5 10L7.5 5'
@@ -115,14 +116,14 @@ export default function Hero({ onScrollToContact, onScrollToPortfolio }) {
                 strokeLinejoin='round'
               />
             </svg>
-          </button>
+          </a>
 
           <button
             className='btn btn--secondary'
             onClick={onScrollToPortfolio}
             aria-label='View Case Studies'
           >
-            View Case Studies
+            {t('hero.viewCases')}
           </button>
         </motion.div>
 
@@ -130,15 +131,15 @@ export default function Hero({ onScrollToContact, onScrollToPortfolio }) {
         <motion.div variants={itemVariants} className='hero__stats'>
           <div className='hero__stat'>
             <strong>100+</strong>
-            <span>Projects Delivered</span>
+            <span>{t('hero.projects')}</span>
           </div>
           <div className='hero__stat'>
             <strong>250K+</strong>
-            <span>Leads Generated</span>
+            <span>{t('hero.leads')}</span>
           </div>
           <div className='hero__stat'>
             <strong>4.9★</strong>
-            <span>Client Rating</span>
+            <span>{t('hero.rating')}</span>
           </div>
         </motion.div>
       </motion.div>

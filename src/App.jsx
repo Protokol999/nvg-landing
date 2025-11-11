@@ -1,19 +1,19 @@
-import { useState, useEffect } from 'react';
-import { useLenis } from './hooks/useLenis.jsx';
-import Preloader from './components/sections/Preloader';
+import { useEffect, useState } from 'react';
+import LogoTarget from './components/LogoTarget';
+import TechOrbit from './components/sections/TechOrbit';
+import Contact from './components/sections/Contact';
+import FAQ from './components/sections/FAQ';
+import Footer from './components/sections/Footer';
 import Header from './components/sections/Header';
 import Hero from './components/sections/Hero';
-import SocialProof from './components/sections/SocialProof';
-import LogoTarget from './components/LogoTarget';
-import Services from './components/sections/Services';
 import HowItWorks from './components/sections/HowItWorks';
-import Portfolio from './components/sections/Portfolio';
-import Testimonials from './components/sections/Testimonials';
-import Pricing from './components/sections/Pricing';
-import FAQ from './components/sections/FAQ';
-import Contact from './components/sections/Contact';
-import Footer from './components/sections/Footer';
 import Outro from './components/sections/Outro';
+import Portfolio from './components/sections/Portfolio';
+import Preloader from './components/sections/Preloader';
+import Pricing from './components/sections/Pricing';
+import Services from './components/sections/Services';
+import Testimonials from './components/sections/Testimonials';
+import { useLenis } from './hooks/useLenis.jsx';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -63,11 +63,11 @@ export default function App() {
 
       {/* Main Content */}
       <main>
-        <Hero 
+        <Hero
           onScrollToContact={scrollToContact}
           onScrollToPortfolio={scrollToPortfolio}
         />
-        <SocialProof />
+        <TechOrbit />
         <LogoTarget />
         <Services />
         <HowItWorks />
@@ -85,12 +85,18 @@ export default function App() {
       {/* Scroll to Top Button */}
       {showScrollTop && (
         <button
-          className="scroll-to-top"
+          className='scroll-to-top'
           onClick={scrollToTop}
-          aria-label="Scroll to top"
+          aria-label='Scroll to top'
         >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <svg width='24' height='24' viewBox='0 0 24 24' fill='none'>
+            <path
+              d='M12 19V5M12 5L5 12M12 5L19 12'
+              stroke='currentColor'
+              strokeWidth='2'
+              strokeLinecap='round'
+              strokeLinejoin='round'
+            />
           </svg>
         </button>
       )}

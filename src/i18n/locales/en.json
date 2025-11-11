@@ -1,0 +1,360 @@
+{
+  "header": {
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "process": "Process",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "startProject": "Start Project",
+    "startYourProject": "Start your project"
+  },
+  "hero": {
+    "title": "We Build Digital Systems That Work While You Sleep",
+    "subtitle": "From first click to loyal customer — we automate your entire funnel with custom landing pages, intelligent bots, and data-driven CRM systems. 100+ businesses scaled with us.",
+    "bookCall": "Book Free Strategy Call",
+    "viewCases": "View Case Studies",
+    "projects": "Projects Delivered",
+    "leads": "Leads Generated",
+    "rating": "Client Rating"
+  },
+  "logoTarget": {
+    "hintIdle": "Aim & Hold to Navigate",
+    "hintActive": "Targeting... {{progress}}%",
+    "instruction": "Aim at the logo and hold to navigate to Portfolio"
+  },
+  "services": {
+    "title": "What We Do",
+    "subtitle": "Full-cycle digital solutions for modern businesses",
+    "items": [
+      {
+        "title": "Automation",
+        "description": "Custom bots, API integrations, and workflow automation that save time and increase efficiency."
+      },
+      {
+        "title": "Landings",
+        "description": "High-converting landing pages with stunning design, fast loading, and perfect SEO optimization."
+      },
+      {
+        "title": "Digital Tools",
+        "description": "Custom CRM systems, internal tools, and dashboards tailored to your business needs."
+      }
+    ]
+  },
+  "quickForm": {
+    "title": "Quick Request",
+    "subtitle": "Leave your contact — we’ll call you back within 5 minutes",
+    "namePlaceholder": "Your name",
+    "phonePlaceholder": "+373 XX XXX XXX",
+    "send": "Send",
+    "sending": "Sending...",
+    "sentTitle": "Request sent!",
+    "sentText": "We will contact you within the hour",
+    "errorText": "Error. Please try again",
+    "footer": "We usually respond within 5 minutes",
+    "errors": {
+      "name": "Enter your name",
+      "phone": "Invalid format"
+    }
+  },
+  "process": {
+    "title": "How We Work",
+    "subtitle": "Simple, transparent process from idea to launch",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Discovery Call",
+        "description": "30-minute strategy session to understand your goals, challenges, and vision.",
+        "duration": "30 min"
+      },
+      {
+        "number": "02",
+        "title": "Strategy & Proposal",
+        "description": "Detailed roadmap, technical specifications, timeline, and transparent pricing.",
+        "duration": "2 days"
+      },
+      {
+        "number": "03",
+        "title": "Design & Development",
+        "description": "We build your solution with weekly check-ins and iterative feedback loops.",
+        "duration": "2-4 weeks"
+      },
+      {
+        "number": "04",
+        "title": "Launch & Optimization",
+        "description": "Smooth deployment, team training, ongoing support, and performance tuning.",
+        "duration": "Ongoing"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Selected Projects",
+    "subtitle": "Real results for real clients",
+    "cta": "View Project →",
+    "projects": [
+      {
+        "title": "E-Commerce Platform",
+        "tag": "Web App",
+        "description": "A full-featured e-commerce platform with payment system integration, order management, and real-time analytics.",
+        "tech": [
+          "React",
+          "Node.js",
+          "PostgreSQL",
+          "Stripe",
+          "Redis"
+        ],
+        "features": [
+          "Payment system integration",
+          "Order management system",
+          "Real-time analytics",
+          "Responsive design"
+        ]
+      },
+      {
+        "title": "Crypto Dashboard",
+        "tag": "Dashboard",
+        "description": "A professional cryptocurrency dashboard with real-time data, charts, and price alerts.",
+        "tech": [
+          "React",
+          "TypeScript",
+          "WebSocket",
+          "Chart.js",
+          "TailwindCSS"
+        ],
+        "features": [
+          "Real-time cryptocurrency prices",
+          "Interactive charts",
+          "Push notifications",
+          "Dark/Light theme"
+        ]
+      },
+      {
+        "title": "AI Chatbot",
+        "tag": "Automation",
+        "description": "An intelligent AI chatbot for automating customer support and handling inquiries 24/7.",
+        "tech": [
+          "Python",
+          "OpenAI",
+          "FastAPI",
+          "React",
+          "MongoDB"
+        ],
+        "features": [
+          "NLP query processing",
+          "CRM integration",
+          "Multilingual support",
+          "Conversation analytics"
+        ]
+      },
+      {
+        "title": "SaaS Landing",
+        "tag": "Landing Page",
+        "description": "A high-converting landing page for SaaS with animations, lead forms, and analytics integration.",
+        "tech": [
+          "Next.js",
+          "Framer Motion",
+          "TypeScript",
+          "Vercel"
+        ],
+        "features": [
+          "SEO optimization",
+          "Fast loading speed",
+          "Responsive design",
+          "A/B testing"
+        ]
+      },
+      {
+        "title": "Mobile Banking App",
+        "tag": "Mobile",
+        "description": "A secure mobile banking app for managing finances, transfers, and investments.",
+        "tech": [
+          "React Native",
+          "Node.js",
+          "PostgreSQL",
+          "Firebase"
+        ],
+        "features": [
+          "Biometric authentication",
+          "Push notifications",
+          "Offline mode",
+          "Data encryption"
+        ]
+      },
+      {
+        "title": "Analytics Platform",
+        "tag": "Dashboard",
+        "description": "A powerful data collection and visualization platform with customizable dashboards and report export.",
+        "tech": [
+          "Vue.js",
+          "D3.js",
+          "Python",
+          "Apache Kafka",
+          "ClickHouse"
+        ],
+        "features": [
+          "Customizable dashboards",
+          "Export to PDF/Excel",
+          "Real-time data processing",
+          "API integration"
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Clients Say",
+    "subtitle": "Real results, real feedback",
+    "items": [
+      {
+        "name": "Ion Popescu",
+        "role": "CEO, TechCorp MD",
+        "avatar": "IP",
+        "rating": 5,
+        "text": "NVG built our CRM from scratch. Sales team efficiency increased by 60%. The automation saves us 20 hours per week."
+      },
+      {
+        "name": "Maria Andronic",
+        "role": "Marketing Director, DataLabs",
+        "avatar": "MA",
+        "rating": 5,
+        "text": "Our landing page conversion rate jumped from 2% to 8% after the redesign. ROI was positive within the first month."
+      },
+      {
+        "name": "Andrei Cojocaru",
+        "role": "Founder, BizHub",
+        "avatar": "AC",
+        "rating": 5,
+        "text": "The Telegram bot handles 80% of customer inquiries automatically. Customer satisfaction actually increased!"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Plans & Pricing",
+    "subtitle": "Transparent pricing, no hidden fees",
+    "button": "Choose Plan",
+    "badge": "Most Popular",
+    "plans": [
+      {
+        "name": "Free Consult",
+        "price": "Free",
+        "features": [
+          "30-min video call",
+          "Project assessment",
+          "Technology recommendations",
+          "No commitment"
+        ]
+      },
+      {
+        "name": "Landing + Bots",
+        "price": "$2,500",
+        "features": [
+          "Custom landing page",
+          "Lead capture bot",
+          "CRM integration",
+          "Mobile responsive",
+          "3 months support"
+        ]
+      },
+      {
+        "name": "Full Site + CRM",
+        "price": "$7,500",
+        "features": [
+          "Multi-page website",
+          "Custom CRM system",
+          "Advanced automation",
+          "Analytics dashboard",
+          "12 months support",
+          "Priority updates"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know",
+    "items": [
+      {
+        "question": "How long does it take to build a landing page?",
+        "answer": "Typically 7-14 days from kickoff to launch, depending on complexity. We work in sprints with regular check-ins to ensure everything meets your expectations."
+      },
+      {
+        "question": "Do you provide ongoing support after launch?",
+        "answer": "Yes! All projects include 3-12 months of support depending on your plan. We handle updates, bug fixes, and performance optimization. Extended support plans are also available."
+      },
+      {
+        "question": "Can you integrate with our existing CRM or tools?",
+        "answer": "Absolutely. We have experience integrating with HubSpot, Salesforce, Bitrix24, and custom APIs. If it has an API, we can connect it."
+      },
+      {
+        "question": "What technologies do you use?",
+        "answer": "We use modern, proven stacks: React/Next.js for web, Node.js/Python for backend, Telegram/WhatsApp APIs for bots, and PostgreSQL/MongoDB for databases. Tech choices depend on your specific needs."
+      },
+      {
+        "question": "Do I own the code and design?",
+        "answer": "Yes, 100%. You receive full source code, design files, and documentation. We also provide training so your team can maintain and update the system."
+      },
+      {
+        "question": "What if I need changes after launch?",
+        "answer": "Minor tweaks are included in your support plan. For major features or redesigns, we provide transparent hourly rates or can create a new project proposal."
+      },
+      {
+        "question": "Can you help with SEO and marketing?",
+        "answer": "Yes. Our landing pages are built with SEO best practices, fast loading times, and analytics tracking. We can also connect you with our marketing partners for paid ads and content strategy."
+      },
+      {
+        "question": "Do you work with clients outside Moldova?",
+        "answer": "Definitely! We work with clients across Europe and beyond. We're fluent in English, Romanian, and Russian. Time zones are never an issue with async communication."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "subtitle": "Tell us about your project",
+    "labels": {
+      "name": "Name *",
+      "phone": "Phone (Moldova) *",
+      "message": "Message *"
+    },
+    "placeholders": {
+      "name": "John Doe",
+      "phone": "+373 XX XXX XXX",
+      "message": "Tell us about your project..."
+    },
+    "errors": {
+      "name": "Name is required",
+      "phone": "Invalid phone number (+373 XX XXX XXX)",
+      "message": "Message must be at least 10 characters"
+    },
+    "button": {
+      "default": "Send Message",
+      "loading": "Sending..."
+    },
+    "status": {
+      "success": "✓ Message sent successfully! We'll get back to you soon.",
+      "error": "✗ Something went wrong. Please try again later."
+    }
+  },
+  "outro": {
+    "tagline": "We create intelligent digital systems",
+    "contact": "Email: {{email}}"
+  },
+  "techOrbit": {
+    "title": "Our Tech Universe",
+    "subtitle": "Powering innovation with cutting-edge technologies"
+  },
+  "pricingModal": {
+    "title": "Submit Request",
+    "subtitle": "Fill out the form and we'll contact you to discuss the details",
+    "namePlaceholder": "Your name",
+    "phonePlaceholder": "+373 XX XXX XXX",
+    "companyPlaceholder": "Company (optional)",
+    "send": "Submit Request",
+    "sending": "Sending...",
+    "sentTitle": "Request Sent!",
+    "sentText": "We will contact you soon",
+    "errorText": "Sending error. Please try again",
+    "footer": "We usually respond within an hour",
+    "errors": {
+      "name": "Enter your name",
+      "phone": "Invalid phone format"
+    }
+  }
+}

@@ -1,0 +1,360 @@
+{
+  "header": {
+    "services": "Servicii",
+    "portfolio": "Portofoliu",
+    "process": "Proces",
+    "pricing": "Prețuri",
+    "faq": "Întrebări",
+    "startProject": "Începe proiectul",
+    "startYourProject": "Începe proiectul tău"
+  },
+  "hero": {
+    "title": "Construim sisteme digitale care lucrează în timp ce dormi",
+    "subtitle": "De la primul clic până la client fidel — automatizăm întregul tău funnel de vânzări cu pagini de destinație personalizate, boți inteligenți și sisteme CRM bazate pe date. Peste 100 de afaceri s-au dezvoltat cu noi.",
+    "bookCall": "Programează o consultație gratuită",
+    "viewCases": "Vezi studiile de caz",
+    "projects": "Proiecte finalizate",
+    "leads": "Lead-uri generate",
+    "rating": "Evaluarea clienților"
+  },
+  "logoTarget": {
+    "hintIdle": "Țintește și menține pentru a naviga",
+    "hintActive": "Țintire... {{progress}}%",
+    "instruction": "Țintește logo-ul și menține pentru a merge la portofoliu"
+  },
+  "services": {
+    "title": "Ce facem noi",
+    "subtitle": "Soluții digitale complete pentru afaceri moderne",
+    "items": [
+      {
+        "title": "Automatizare",
+        "description": "Boți personalizați, integrări API și automatizarea fluxurilor de lucru care economisesc timp și cresc eficiența."
+      },
+      {
+        "title": "Pagini de destinație",
+        "description": "Pagini de destinație cu conversie ridicată, design atrăgător, încărcare rapidă și optimizare SEO perfectă."
+      },
+      {
+        "title": "Instrumente digitale",
+        "description": "Sisteme CRM personalizate, instrumente interne și dashboard-uri adaptate nevoilor afacerii tale."
+      }
+    ]
+  },
+  "quickForm": {
+    "title": "Cerere rapidă",
+    "subtitle": "Lasă-ți datele de contact — te sunăm în 5 minute",
+    "namePlaceholder": "Numele tău",
+    "phonePlaceholder": "+373 XX XXX XXX",
+    "send": "Trimite",
+    "sending": "Se trimite...",
+    "sentTitle": "Cererea a fost trimisă!",
+    "sentText": "Te vom contacta în decurs de o oră",
+    "errorText": "Eroare. Încearcă din nou",
+    "footer": "Răspundem de obicei în 5 minute",
+    "errors": {
+      "name": "Introdu numele",
+      "phone": "Format invalid"
+    }
+  },
+  "process": {
+    "title": "Cum lucrăm",
+    "subtitle": "Proces simplu și transparent de la idee la lansare",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Discovery Call",
+        "description": "Sesiune de strategie de 30 de minute pentru a înțelege obiectivele, provocările și viziunea ta.",
+        "duration": "30 min"
+      },
+      {
+        "number": "02",
+        "title": "Strategie și propunere",
+        "description": "Roadmap detaliat, specificații tehnice, termen de livrare și prețuri transparente.",
+        "duration": "2 zile"
+      },
+      {
+        "number": "03",
+        "title": "Design și dezvoltare",
+        "description": "Construim soluția ta cu call-uri săptămânale și feedback iterativ.",
+        "duration": "2–4 săptămâni"
+      },
+      {
+        "number": "04",
+        "title": "Lansare și optimizare",
+        "description": "Lansare fără probleme, training pentru echipă, suport continuu și optimizare de performanță.",
+        "duration": "Continuu"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Proiecte selectate",
+    "subtitle": "Rezultate reale pentru clienți reali",
+    "cta": "Vezi proiectul →",
+    "projects": [
+      {
+        "title": "Platformă E-Commerce",
+        "tag": "Aplicație web",
+        "description": "Platformă completă de e-commerce cu integrare a plăților, gestionarea comenzilor și analitică în timp real.",
+        "tech": [
+          "React",
+          "Node.js",
+          "PostgreSQL",
+          "Stripe",
+          "Redis"
+        ],
+        "features": [
+          "Integrare cu sisteme de plată",
+          "Sistem de gestionare a comenzilor",
+          "Analitică în timp real",
+          "Design responsiv"
+        ]
+      },
+      {
+        "title": "Crypto Dashboard",
+        "tag": "Panou de control",
+        "description": "Panou profesional pentru monitorizarea criptomonedelor cu date live, grafice și alerte de preț.",
+        "tech": [
+          "React",
+          "TypeScript",
+          "WebSocket",
+          "Chart.js",
+          "TailwindCSS"
+        ],
+        "features": [
+          "Prețuri live ale criptomonedelor",
+          "Grafice interactive",
+          "Notificări push",
+          "Temă închisă/deschisă"
+        ]
+      },
+      {
+        "title": "AI Chatbot",
+        "tag": "Automatizare",
+        "description": "Chatbot inteligent pentru automatizarea suportului clienților și gestionarea cererilor 24/7.",
+        "tech": [
+          "Python",
+          "OpenAI",
+          "FastAPI",
+          "React",
+          "MongoDB"
+        ],
+        "features": [
+          "Procesarea cererilor cu NLP",
+          "Integrare cu CRM",
+          "Suport multilingv",
+          "Analitica conversațiilor"
+        ]
+      },
+      {
+        "title": "SaaS Landing",
+        "tag": "Pagină de destinație",
+        "description": "Landing page cu conversie ridicată pentru SaaS, cu animații și formulare de lead-uri.",
+        "tech": [
+          "Next.js",
+          "Framer Motion",
+          "TypeScript",
+          "Vercel"
+        ],
+        "features": [
+          "Optimizare SEO",
+          "Viteză mare de încărcare",
+          "Design responsiv",
+          "Testare A/B"
+        ]
+      },
+      {
+        "title": "Aplicație bancară mobilă",
+        "tag": "Mobil",
+        "description": "Aplicație bancară sigură pentru gestionarea finanțelor, transferurilor și investițiilor.",
+        "tech": [
+          "React Native",
+          "Node.js",
+          "PostgreSQL",
+          "Firebase"
+        ],
+        "features": [
+          "Autentificare biometrică",
+          "Notificări push",
+          "Mod offline",
+          "Criptarea datelor"
+        ]
+      },
+      {
+        "title": "Platformă de analiză",
+        "tag": "Panou de control",
+        "description": "Platformă puternică pentru colectarea și vizualizarea datelor, cu dashboard-uri personalizabile și export de rapoarte.",
+        "tech": [
+          "Vue.js",
+          "D3.js",
+          "Python",
+          "Apache Kafka",
+          "ClickHouse"
+        ],
+        "features": [
+          "Dashboard-uri personalizabile",
+          "Export în PDF/Excel",
+          "Procesare în timp real",
+          "Integrare API"
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Ce spun clienții",
+    "subtitle": "Rezultate reale, feedback real",
+    "items": [
+      {
+        "name": "Ion Popescu",
+        "role": "CEO, TechCorp MD",
+        "avatar": "IP",
+        "rating": 5,
+        "text": "NVG a construit CRM-ul nostru de la zero. Eficiența echipei de vânzări a crescut cu 60%. Automatizarea economisește 20 de ore pe săptămână."
+      },
+      {
+        "name": "Maria Andronic",
+        "role": "Director Marketing, DataLabs",
+        "avatar": "MA",
+        "rating": 5,
+        "text": "Rata de conversie a paginii de destinație a crescut de la 2% la 8% după redesign. ROI pozitiv încă din prima lună."
+      },
+      {
+        "name": "Andrei Cojocaru",
+        "role": "Fondator, BizHub",
+        "avatar": "AC",
+        "rating": 5,
+        "text": "Botul Telegram gestionează automat 80% din cererile clienților. Gradul de satisfacție chiar a crescut!"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Planuri și prețuri",
+    "subtitle": "Prețuri transparente, fără taxe ascunse",
+    "button": "Alege planul",
+    "badge": "Cel mai popular",
+    "plans": [
+      {
+        "name": "Consultanță gratuită",
+        "price": "Gratuit",
+        "features": [
+          "Apel video de 30 de minute",
+          "Evaluarea proiectului",
+          "Recomandări tehnologice",
+          "Fără obligații"
+        ]
+      },
+      {
+        "name": "Landing + Boti",
+        "price": "$2,500",
+        "features": [
+          "Pagină de destinație personalizată",
+          "Bot pentru captarea lead-urilor",
+          "Integrare CRM",
+          "Design responsiv",
+          "3 luni de suport"
+        ]
+      },
+      {
+        "name": "Site complet + CRM",
+        "price": "$7,500",
+        "features": [
+          "Site cu mai multe pagini",
+          "Sistem CRM personalizat",
+          "Automatizare avansată",
+          "Panou de analiză",
+          "12 luni de suport",
+          "Actualizări prioritare"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Întrebări frecvente",
+    "subtitle": "Tot ce trebuie să știi",
+    "items": [
+      {
+        "question": "Cât durează realizarea unei pagini de destinație?",
+        "answer": "De obicei 7–14 zile de la început până la lansare, în funcție de complexitate. Lucrăm în sprinturi, cu verificări regulate pentru a asigura calitatea."
+      },
+      {
+        "question": "Oferiți suport după lansare?",
+        "answer": "Da! Toate proiectele includ 3–12 luni de suport, în funcție de planul ales. Gestionăm actualizări, corecții de erori și optimizare a performanței."
+      },
+      {
+        "question": "Puteți integra soluția cu CRM-ul nostru?",
+        "answer": "Desigur. Avem experiență în integrarea cu HubSpot, Salesforce, Bitrix24 și alte API-uri. Dacă există un API, îl putem conecta."
+      },
+      {
+        "question": "Ce tehnologii folosiți?",
+        "answer": "Folosim tehnologii moderne: React/Next.js pentru web, Node.js/Python pentru backend, API-uri Telegram/WhatsApp pentru boți și PostgreSQL/MongoDB pentru baze de date."
+      },
+      {
+        "question": "Cine deține codul și designul?",
+        "answer": "Tu. Primești codul sursă complet, fișierele de design și documentația. Oferim și instruire pentru echipa ta."
+      },
+      {
+        "question": "Ce se întâmplă dacă am nevoie de modificări după lansare?",
+        "answer": "Modificările minore sunt incluse în suport. Pentru funcții mari sau redesign, oferim tarife orare transparente sau o nouă propunere de proiect."
+      },
+      {
+        "question": "Puteți ajuta cu SEO și marketing?",
+        "answer": "Da. Paginile noastre sunt optimizate SEO, rapide și conectate la analitică. Putem colabora și cu parteneri de marketing pentru reclame și conținut."
+      },
+      {
+        "question": "Lucrați cu clienți din afara Moldovei?",
+        "answer": "Da, absolut! Lucrăm cu clienți din întreaga Europă și nu numai. Vorbim fluent engleză, română și rusă."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Hai să lucrăm împreună",
+    "subtitle": "Povestește-ne despre proiectul tău",
+    "labels": {
+      "name": "Nume *",
+      "phone": "Telefon (Moldova) *",
+      "message": "Mesaj *"
+    },
+    "placeholders": {
+      "name": "Ion Popescu",
+      "phone": "+373 XX XXX XXX",
+      "message": "Spune-ne despre proiectul tău..."
+    },
+    "errors": {
+      "name": "Introdu numele",
+      "phone": "Număr de telefon invalid (+373 XX XXX XXX)",
+      "message": "Mesajul trebuie să conțină cel puțin 10 caractere"
+    },
+    "button": {
+      "default": "Trimite mesajul",
+      "loading": "Se trimite..."
+    },
+    "status": {
+      "success": "✓ Mesaj trimis cu succes! Te vom contacta în curând.",
+      "error": "✗ A apărut o eroare. Încearcă mai târziu."
+    }
+  },
+  "outro": {
+    "tagline": "Creăm sisteme digitale inteligente",
+    "contact": "Email: {{email}}"
+  },
+  "techOrbit": {
+    "title": "Universul nostru tehnologic",
+    "subtitle": "Promovăm inovația prin tehnologii de ultimă generație"
+  },
+  "pricingModal": {
+    "title": "Trimite cerere",
+    "subtitle": "Completează formularul și te vom contacta pentru a discuta detaliile",
+    "namePlaceholder": "Numele tău",
+    "phonePlaceholder": "+373 XX XXX XXX",
+    "companyPlaceholder": "Companie (opțional)",
+    "send": "Trimite cererea",
+    "sending": "Se trimite...",
+    "sentTitle": "Cererea a fost trimisă!",
+    "sentText": "Te vom contacta în curând",
+    "errorText": "Eroare la trimitere. Încearcă din nou",
+    "footer": "De obicei răspundem în maxim o oră",
+    "errors": {
+      "name": "Introdu numele",
+      "phone": "Format telefon invalid"
+    }
+  }
+}
