@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react';
-import LogoTarget from './components/LogoTarget';
-import TechOrbit from './components/sections/TechOrbit';
 import Contact from './components/sections/Contact';
 import FAQ from './components/sections/FAQ';
 import Footer from './components/sections/Footer';
@@ -12,6 +10,7 @@ import Portfolio from './components/sections/Portfolio';
 import Preloader from './components/sections/Preloader';
 import Pricing from './components/sections/Pricing';
 import Services from './components/sections/Services';
+import TechOrbit from './components/sections/TechOrbit';
 import Testimonials from './components/sections/Testimonials';
 import { useLenis } from './hooks/useLenis.jsx';
 
@@ -68,7 +67,7 @@ export default function App() {
           onScrollToPortfolio={scrollToPortfolio}
         />
         <TechOrbit />
-        <LogoTarget />
+        {/* <LogoTarget /> */}
         <Services />
         <HowItWorks />
         <Portfolio />

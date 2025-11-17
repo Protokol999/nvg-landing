@@ -1,360 +1,316 @@
 {
   "header": {
     "services": "Services",
-    "portfolio": "Portfolio",
     "process": "Process",
+    "portfolio": " Projects",
     "pricing": "Pricing",
     "faq": "FAQ",
-    "startProject": "Start Project",
+    "startProject": "Start project",
     "startYourProject": "Start your project"
   },
   "hero": {
-    "title": "We Build Digital Systems That Work While You Sleep",
-    "subtitle": "From first click to loyal customer — we automate your entire funnel with custom landing pages, intelligent bots, and data-driven CRM systems. 100+ businesses scaled with us.",
-    "bookCall": "Book Free Strategy Call",
-    "viewCases": "View Case Studies",
-    "projects": "Projects Delivered",
-    "leads": "Leads Generated",
-    "rating": "Client Rating"
+    "title": "We build digital solutions that help your business grow",
+    "subtitle": "Landing pages, bots and CRM systems that work fast, simple and effectively.",
+    "bookCall": "Free consultation",
+    "viewCases": "Cases",
+    "projects": "Projects",
+    "leads": "Leads",
+    "rating": "Rating"
   },
   "logoTarget": {
-    "hintIdle": "Aim & Hold to Navigate",
-    "hintActive": "Targeting... {{progress}}%",
-    "instruction": "Aim at the logo and hold to navigate to Portfolio"
+    "hintIdle": "Aim and hold",
+    "hintActive": "Loading… {{progress}}%"
   },
   "services": {
-    "title": "What We Do",
-    "subtitle": "Full-cycle digital solutions for modern businesses",
+    "title": "What we do",
+    "subtitle": "No noise — just results",
     "items": [
       {
         "title": "Automation",
-        "description": "Custom bots, API integrations, and workflow automation that save time and increase efficiency."
+        "description": "Bots, integrations and workflows that save time."
       },
       {
-        "title": "Landings",
-        "description": "High-converting landing pages with stunning design, fast loading, and perfect SEO optimization."
+        "title": "Landing Pages",
+        "description": "Fast, clean and user-friendly pages."
       },
       {
         "title": "Digital Tools",
-        "description": "Custom CRM systems, internal tools, and dashboards tailored to your business needs."
+        "description": "CRM systems and dashboards for your business."
       }
     ]
   },
   "quickForm": {
-    "title": "Quick Request",
-    "subtitle": "Leave your contact — we’ll call you back within 5 minutes",
-    "namePlaceholder": "Your name",
+    "title": "Quick request",
+    "subtitle": "We'll contact you within 5 minutes",
+    "namePlaceholder": "Name",
     "phonePlaceholder": "+373 XX XXX XXX",
     "send": "Send",
-    "sending": "Sending...",
-    "sentTitle": "Request sent!",
-    "sentText": "We will contact you within the hour",
-    "errorText": "Error. Please try again",
-    "footer": "We usually respond within 5 minutes",
+    "sending": "Sending…",
+    "sentTitle": "Sent",
+    "sentText": "We'll get back to you soon",
+    "errorText": "Error. Try again",
+    "footer": "We usually reply within 5 minutes",
     "errors": {
       "name": "Enter your name",
-      "phone": "Invalid format"
+      "phone": "Invalid phone number"
     }
   },
   "process": {
-    "title": "How We Work",
-    "subtitle": "Simple, transparent process from idea to launch",
+    "title": "How we work",
+    "subtitle": "A simple path from idea to launch",
     "steps": [
       {
         "number": "01",
-        "title": "Discovery Call",
-        "description": "30-minute strategy session to understand your goals, challenges, and vision.",
+        "title": "Call",
+        "description": "Understanding your goals.",
         "duration": "30 min"
       },
       {
         "number": "02",
-        "title": "Strategy & Proposal",
-        "description": "Detailed roadmap, technical specifications, timeline, and transparent pricing.",
+        "title": "Plan",
+        "description": "Preparing a proposal.",
         "duration": "2 days"
       },
       {
         "number": "03",
-        "title": "Design & Development",
-        "description": "We build your solution with weekly check-ins and iterative feedback loops.",
-        "duration": "2-4 weeks"
+        "title": "Development",
+        "description": "We build and show progress.",
+        "duration": "2–4 weeks"
       },
       {
         "number": "04",
-        "title": "Launch & Optimization",
-        "description": "Smooth deployment, team training, ongoing support, and performance tuning.",
+        "title": "Launch",
+        "description": "Support and improvements.",
         "duration": "Ongoing"
       }
     ]
   },
   "portfolio": {
-    "title": "Selected Projects",
-    "subtitle": "Real results for real clients",
-    "cta": "View Project →",
+    "title": "Projects",
+    "subtitle": "Solutions that work",
+    "cta": "View →",
     "projects": [
       {
-        "title": "E-Commerce Platform",
-        "tag": "Web App",
-        "description": "A full-featured e-commerce platform with payment system integration, order management, and real-time analytics.",
-        "tech": [
-          "React",
-          "Node.js",
-          "PostgreSQL",
-          "Stripe",
-          "Redis"
-        ],
-        "features": [
-          "Payment system integration",
-          "Order management system",
-          "Real-time analytics",
-          "Responsive design"
-        ]
-      },
-      {
-        "title": "Crypto Dashboard",
-        "tag": "Dashboard",
-        "description": "A professional cryptocurrency dashboard with real-time data, charts, and price alerts.",
-        "tech": [
-          "React",
-          "TypeScript",
-          "WebSocket",
-          "Chart.js",
-          "TailwindCSS"
-        ],
-        "features": [
-          "Real-time cryptocurrency prices",
-          "Interactive charts",
-          "Push notifications",
-          "Dark/Light theme"
-        ]
-      },
-      {
-        "title": "AI Chatbot",
+        "title": "Telegram Sales Bot",
         "tag": "Automation",
-        "description": "An intelligent AI chatbot for automating customer support and handling inquiries 24/7.",
-        "tech": [
-          "Python",
-          "OpenAI",
-          "FastAPI",
-          "React",
-          "MongoDB"
-        ],
+        "description": "A smart bot that collects leads, replies to clients and processes requests 24/7.",
+        "tech": ["Node.js", "Telegram API", "MongoDB", "Webhook"],
         "features": [
-          "NLP query processing",
+          "Lead collection",
+          "Scenario-based replies",
           "CRM integration",
-          "Multilingual support",
-          "Conversation analytics"
+          "Message analytics"
         ]
       },
       {
-        "title": "SaaS Landing",
+        "title": "Business Funnel Bot",
+        "tag": "Telegram Bot",
+        "description": "A full sales funnel inside Telegram: quizzes, lead capture, warming and notifications.",
+        "tech": ["Telegram API", "BotFather", "Node.js", "FastAPI"],
+        "features": [
+          "Quiz questions",
+          "Auto-replies",
+          "Manager notifications",
+          "Lead export"
+        ]
+      },
+      {
+        "title": "Service Landing Page",
         "tag": "Landing Page",
-        "description": "A high-converting landing page for SaaS with animations, lead forms, and analytics integration.",
-        "tech": [
-          "Next.js",
-          "Framer Motion",
-          "TypeScript",
-          "Vercel"
-        ],
+        "description": "A modern landing page with animation, fast loading and high conversion.",
+        "tech": ["React", "Next.js", "TailwindCSS", "Vercel"],
         "features": [
-          "SEO optimization",
-          "Fast loading speed",
+          "Fast loading",
           "Responsive design",
-          "A/B testing"
+          "SEO optimization",
+          "Analytics integration"
         ]
       },
       {
-        "title": "Mobile Banking App",
-        "tag": "Mobile",
-        "description": "A secure mobile banking app for managing finances, transfers, and investments.",
-        "tech": [
-          "React Native",
-          "Node.js",
-          "PostgreSQL",
-          "Firebase"
-        ],
+        "title": "Corporate Website",
+        "tag": "Website",
+        "description": "A clean and structured website with pages, forms, blog and integrations.",
+        "tech": ["Next.js", "Node.js", "Firebase", "MUI"],
         "features": [
-          "Biometric authentication",
-          "Push notifications",
-          "Offline mode",
-          "Data encryption"
+          "Multi-page structure",
+          "User dashboard",
+          "Request form",
+          "CMS content management"
         ]
       },
       {
-        "title": "Analytics Platform",
-        "tag": "Dashboard",
-        "description": "A powerful data collection and visualization platform with customizable dashboards and report export.",
-        "tech": [
-          "Vue.js",
-          "D3.js",
-          "Python",
-          "Apache Kafka",
-          "ClickHouse"
-        ],
+        "title": "Targeted Advertising",
+        "tag": "Marketing",
+        "description": "Ad campaigns for Instagram, TikTok and Facebook with optimization.",
+        "tech": ["Meta Ads", "TikTok Ads", "Google Analytics", "Meta Pixel"],
         "features": [
-          "Customizable dashboards",
-          "Export to PDF/Excel",
-          "Real-time data processing",
-          "API integration"
+          "Niche research",
+          "Campaign setup",
+          "A/B testing",
+          "Performance optimization"
+        ]
+      },
+      {
+        "title": "Mini CRM for Business",
+        "tag": "CRM",
+        "description": "A simple CRM for clients, orders and leads — everything in one place.",
+        "tech": ["React", "Node.js", "PostgreSQL", "Supabase"],
+        "features": [
+          "Client list",
+          "Status tracking",
+          "Reminders",
+          "Data export"
         ]
       }
     ]
   },
   "testimonials": {
-    "title": "What Clients Say",
-    "subtitle": "Real results, real feedback",
+    "title": "Testimonials",
+    "subtitle": "Trusted by clients",
     "items": [
       {
         "name": "Ion Popescu",
-        "role": "CEO, TechCorp MD",
+        "role": "CEO, TechCorp",
         "avatar": "IP",
         "rating": 5,
-        "text": "NVG built our CRM from scratch. Sales team efficiency increased by 60%. The automation saves us 20 hours per week."
+        "text": "CRM helped increase efficiency and save time."
       },
       {
         "name": "Maria Andronic",
         "role": "Marketing Director, DataLabs",
         "avatar": "MA",
         "rating": 5,
-        "text": "Our landing page conversion rate jumped from 2% to 8% after the redesign. ROI was positive within the first month."
+        "text": "Conversion grew 4×. Great work."
       },
       {
         "name": "Andrei Cojocaru",
         "role": "Founder, BizHub",
         "avatar": "AC",
         "rating": 5,
-        "text": "The Telegram bot handles 80% of customer inquiries automatically. Customer satisfaction actually increased!"
+        "text": "The bot handles almost all client requests."
       }
     ]
   },
   "pricing": {
-    "title": "Plans & Pricing",
-    "subtitle": "Transparent pricing, no hidden fees",
-    "button": "Choose Plan",
-    "badge": "Most Popular",
+    "title": "Pricing",
+    "subtitle": "Simple and transparent",
+    "button": "Choose",
+    "badge": "Best choice",
     "plans": [
       {
-        "name": "Free Consult",
+        "name": "Consultation",
         "price": "Free",
         "features": [
-          "30-min video call",
-          "Project assessment",
-          "Technology recommendations",
-          "No commitment"
+          "Video call",
+          "Project evaluation",
+          "Recommendations",
+          "No obligations"
         ]
       },
       {
-        "name": "Landing + Bots",
-        "price": "$2,500",
+        "name": "Landing + Bot",
+        "price": "$500",
         "features": [
-          "Custom landing page",
-          "Lead capture bot",
+          "Landing page",
+          "Bot",
           "CRM integration",
-          "Mobile responsive",
+          "Responsive",
           "3 months support"
         ]
       },
       {
-        "name": "Full Site + CRM",
-        "price": "$7,500",
+        "name": "Website + CRM",
+        "price": "$1000",
         "features": [
-          "Multi-page website",
-          "Custom CRM system",
-          "Advanced automation",
-          "Analytics dashboard",
+          "Full website",
+          "CRM",
+          "Automation",
+          "Analytics",
           "12 months support",
-          "Priority updates"
+          "Priority"
         ]
       }
     ]
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know",
+    "title": "FAQ",
+    "subtitle": "Quick answers",
     "items": [
       {
-        "question": "How long does it take to build a landing page?",
-        "answer": "Typically 7-14 days from kickoff to launch, depending on complexity. We work in sprints with regular check-ins to ensure everything meets your expectations."
+        "question": "How long does a landing page take?",
+        "answer": "7–14 days depending on the task."
+      },
+      { "question": "Do you provide support?", "answer": "Yes, 3–12 months." },
+      {
+        "question": "Do you work with CRM?",
+        "answer": "Yes, if it has an API."
       },
       {
-        "question": "Do you provide ongoing support after launch?",
-        "answer": "Yes! All projects include 3-12 months of support depending on your plan. We handle updates, bug fixes, and performance optimization. Extended support plans are also available."
+        "question": "What tech do you use?",
+        "answer": "React, Next.js, Node.js, Python, Telegram API."
       },
+      { "question": "Who owns the code?", "answer": "You — 100%." },
       {
-        "question": "Can you integrate with our existing CRM or tools?",
-        "answer": "Absolutely. We have experience integrating with HubSpot, Salesforce, Bitrix24, and custom APIs. If it has an API, we can connect it."
+        "question": "Can I update the project later?",
+        "answer": "Yes. Small changes are free."
       },
+      { "question": "Do you do SEO?", "answer": "Yes, basic SEO is included." },
       {
-        "question": "What technologies do you use?",
-        "answer": "We use modern, proven stacks: React/Next.js for web, Node.js/Python for backend, Telegram/WhatsApp APIs for bots, and PostgreSQL/MongoDB for databases. Tech choices depend on your specific needs."
-      },
-      {
-        "question": "Do I own the code and design?",
-        "answer": "Yes, 100%. You receive full source code, design files, and documentation. We also provide training so your team can maintain and update the system."
-      },
-      {
-        "question": "What if I need changes after launch?",
-        "answer": "Minor tweaks are included in your support plan. For major features or redesigns, we provide transparent hourly rates or can create a new project proposal."
-      },
-      {
-        "question": "Can you help with SEO and marketing?",
-        "answer": "Yes. Our landing pages are built with SEO best practices, fast loading times, and analytics tracking. We can also connect you with our marketing partners for paid ads and content strategy."
-      },
-      {
-        "question": "Do you work with clients outside Moldova?",
-        "answer": "Definitely! We work with clients across Europe and beyond. We're fluent in English, Romanian, and Russian. Time zones are never an issue with async communication."
+        "question": "Do you work internationally?",
+        "answer": "Yes, worldwide."
       }
     ]
   },
   "contact": {
-    "title": "Let's Work Together",
+    "title": "Contact us",
     "subtitle": "Tell us about your project",
     "labels": {
       "name": "Name *",
-      "phone": "Phone (Moldova) *",
+      "phone": "Phone *",
       "message": "Message *"
     },
     "placeholders": {
-      "name": "John Doe",
+      "name": "Your name",
       "phone": "+373 XX XXX XXX",
-      "message": "Tell us about your project..."
+      "message": "Project details..."
     },
     "errors": {
-      "name": "Name is required",
-      "phone": "Invalid phone number (+373 XX XXX XXX)",
-      "message": "Message must be at least 10 characters"
+      "name": "Enter your name",
+      "phone": "Invalid phone number",
+      "message": "Minimum 10 characters"
     },
     "button": {
-      "default": "Send Message",
-      "loading": "Sending..."
+      "default": "Send",
+      "loading": "Sending…"
     },
     "status": {
-      "success": "✓ Message sent successfully! We'll get back to you soon.",
-      "error": "✗ Something went wrong. Please try again later."
+      "success": "Message sent!",
+      "error": "Error. Try later."
     }
   },
   "outro": {
-    "tagline": "We create intelligent digital systems",
+    "tagline": "We create simple and smart digital solutions",
     "contact": "Email: {{email}}"
   },
   "techOrbit": {
-    "title": "Our Tech Universe",
-    "subtitle": "Powering innovation with cutting-edge technologies"
+    "title": "Technologies",
+    "subtitle": "We use the best"
   },
   "pricingModal": {
-    "title": "Submit Request",
-    "subtitle": "Fill out the form and we'll contact you to discuss the details",
-    "namePlaceholder": "Your name",
+    "title": "Send request",
+    "subtitle": "We will contact you soon",
+    "namePlaceholder": "Name",
     "phonePlaceholder": "+373 XX XXX XXX",
     "companyPlaceholder": "Company (optional)",
-    "send": "Submit Request",
+    "send": "Send",
     "sending": "Sending...",
-    "sentTitle": "Request Sent!",
-    "sentText": "We will contact you soon",
-    "errorText": "Sending error. Please try again",
-    "footer": "We usually respond within an hour",
+    "sentTitle": "Done",
+    "sentText": "We'll message you soon",
+    "errorText": "Error. Try again",
+    "footer": "Usually reply within an hour",
     "errors": {
       "name": "Enter your name",
-      "phone": "Invalid phone format"
+      "phone": "Invalid phone number"
     }
   }
 }

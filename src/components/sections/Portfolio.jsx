@@ -14,7 +14,7 @@ export default function Portfolio() {
       title: `${t('portfolio.projects.0.title')}`,
       tag: `${t('portfolio.projects.0.tag')}`,
       image:
-        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
+        'https://images.unsplash.com/photo-1556155092-490a1ba16284?w=900&q=80',
       description: `${t('portfolio.projects.0.description')}`,
       tech: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'Redis'],
       features: [
@@ -22,15 +22,13 @@ export default function Portfolio() {
         `${t('portfolio.projects.0.features.1')}`,
         `${t('portfolio.projects.0.features.2')}`,
         `${t('portfolio.projects.0.features.3')}`
-      ],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com'
+      ]
     },
     {
       title: `${t('portfolio.projects.1.title')}`,
       tag: `${t('portfolio.projects.1.tag')}`,
       image:
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
+        'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=900&q=80',
       description: `${t('portfolio.projects.1.description')}`,
       tech: ['React', 'TypeScript', 'WebSocket', 'Chart.js', 'TailwindCSS'],
       features: [
@@ -38,14 +36,13 @@ export default function Portfolio() {
         `${t('portfolio.projects.1.features.1')}`,
         `${t('portfolio.projects.1.features.2')}`,
         `${t('portfolio.projects.1.features.3')}`
-      ],
-      liveUrl: 'https://example.com'
+      ]
     },
     {
       title: `${t('portfolio.projects.2.title')}`,
       tag: `${t('portfolio.projects.2.tag')}`,
       image:
-        'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80',
+        'https://images.unsplash.com/photo-1558655146-d09347e92766?w=900&q=80',
       description: `${t('portfolio.projects.2.description')}`,
       tech: ['Python', 'OpenAI', 'FastAPI', 'React', 'MongoDB'],
       features: [
@@ -53,8 +50,7 @@ export default function Portfolio() {
         `${t('portfolio.projects.2.features.1')}`,
         `${t('portfolio.projects.2.features.2')}`,
         `${t('portfolio.projects.2.features.3')}`
-      ],
-      githubUrl: 'https://github.com'
+      ]
     },
     {
       title: `${t('portfolio.projects.3.title')}`,
@@ -68,8 +64,7 @@ export default function Portfolio() {
         `${t('portfolio.projects.3.features.1')}`,
         `${t('portfolio.projects.3.features.2')}`,
         `${t('portfolio.projects.3.features.3')}`
-      ],
-      liveUrl: 'https://example.com'
+      ]
     },
     {
       title: `${t('portfolio.projects.4.title')}`,
@@ -83,14 +78,13 @@ export default function Portfolio() {
         `${t('portfolio.projects.4.features.1')}`,
         `${t('portfolio.projects.4.features.2')}`,
         `${t('portfolio.projects.4.features.3')}`
-      ],
-      liveUrl: 'https://example.com'
+      ]
     },
     {
       title: `${t('portfolio.projects.5.title')}`,
       tag: `${t('portfolio.projects.5.tag')}`,
       image:
-        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
+        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80',
       description: `${t('portfolio.projects.5.description')}`,
       tech: ['Vue.js', 'D3.js', 'Python', 'Apache Kafka', 'ClickHouse'],
       features: [
@@ -98,9 +92,7 @@ export default function Portfolio() {
         `${t('portfolio.projects.5.features.1')}`,
         `${t('portfolio.projects.5.features.2')}`,
         `${t('portfolio.projects.5.features.3')}`
-      ],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com'
+      ]
     }
   ];
 
