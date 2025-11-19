@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import GridScan from '../GridScan';
 import './Hero.css';
 
-export default function Hero({ onScrollToContact, onScrollToPortfolio }) {
+export default function Hero({ onScrollToPortfolio }) {
   const sectionRef = useRef(null);
   const bgRef = useRef(null);
   const { t } = useTranslation();

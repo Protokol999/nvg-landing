@@ -126,7 +126,6 @@ export default function Footer() {
             <span>•</span>
             <a href='/terms'>Terms of Service</a>
           </div>
-          <p className='footer__made'>Made with 💜 in Moldova</p>
         </div>
       </div>
     </footer>

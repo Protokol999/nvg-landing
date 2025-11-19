@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import './Pricing.css';
 import { useTranslation } from 'react-i18next';
 import PricingModal from '../PricingModal';
+import './Pricing.css';
 
 export default function Pricing() {
   const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState(null);
-  
+
   const plans = [
     {
       name: `${t('pricing.plans.0.name')}`,
@@ -16,8 +16,7 @@ export default function Pricing() {
       features: [
         `${t('pricing.plans.0.features.0')}`,
         `${t('pricing.plans.0.features.1')}`,
-        `${t('pricing.plans.0.features.2')}`,
-        `${t('pricing.plans.0.features.3')}`
+        `${t('pricing.plans.0.features.2')}`
       ],
       recommended: false
     },

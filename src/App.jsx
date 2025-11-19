@@ -30,18 +30,20 @@ export default function App() {
   }, []);
 
   // Scroll functions
-  const scrollToContact = () => {
+  const onScrollToContact = () => {
     const element = document.getElementById('contact');
     if (element && lenis) {
       lenis.scrollTo(element, { offset: -80, duration: 1.5 });
     }
   };
 
-  const scrollToPortfolio = () => {
-    const element = document.getElementById('portfolio');
-    if (element && lenis) {
-      lenis.scrollTo(element, { offset: -80, duration: 1.5 });
-    }
+  const onScrollToPortfolio = () => {
+    setTimeout(() => {
+      const element = document.getElementById('portfolio');
+      if (element && lenis) {
+        lenis.scrollTo(element, { offset: -80, duration: 1.5 });
+      }
+    }, 100);
   };
 
   const scrollToTop = () => {
@@ -58,14 +60,14 @@ export default function App() {
       {loading && <Preloader onComplete={() => setLoading(false)} />}
 
       {/* Header */}
-      <Header onScrollToContact={scrollToContact} />
+      <Header
+        onScrollToContact={onScrollToContact}
+        onScrollToPortfolio={onScrollToPortfolio}
+      />
 
       {/* Main Content */}
       <main>
-        <Hero
-          onScrollToContact={scrollToContact}
-          onScrollToPortfolio={scrollToPortfolio}
-        />
+        <Hero onScrollToPortfolio={onScrollToPortfolio} />
         <TechOrbit />
         {/* <LogoTarget /> */}
         <Services />

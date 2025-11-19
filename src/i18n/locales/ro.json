@@ -193,41 +193,36 @@
   },
   "pricing": {
     "title": "Prețuri",
-    "subtitle": "Simplu și transparent",
+    "subtitle": "Tarife simple și transparente",
     "button": "Alege",
-    "badge": "Cea mai bună alegere",
+    "badge": "Alegerea cea mai bună",
     "plans": [
       {
-        "name": "Consultație",
+        "name": "Consultare",
         "price": "Gratuit",
-        "features": [
-          "Apel video",
-          "Evaluarea proiectului",
-          "Recomandări",
-          "Fără obligații"
-        ]
+        "features": ["Videocall", "Evaluarea sarcinii", "Recomandări"]
       },
       {
         "name": "Landing + Bot",
-        "price": "$500",
+        "price": "$300",
         "features": [
-          "Landing",
-          "Bot",
-          "Integrare CRM",
-          "Responsive",
-          "3 luni suport"
+          "Landing page",
+          "Telegram-bot, Instagram-bot",
+          "Integrare CRM cu API-ul dvs.",
+          "Adaptabilitate",
+          "2 luni suport"
         ]
       },
       {
         "name": "Site + CRM",
-        "price": "$1000",
+        "price": "$600",
         "features": [
-          "Site complet",
-          "CRM",
-          "Automatizare",
+          "Site multi-pagină (până la 5 pagini)",
+          "CRM, integrare CRM cu API-ul dvs.",
+          "Automatizarea proceselor",
           "Analitică",
-          "12 luni suport",
-          "Prioritate"
+          "6 luni suport",
+          "Comunicare prioritară"
         ]
       }
     ]

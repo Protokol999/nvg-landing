@@ -2,13 +2,16 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  base: '/nvg-landing/', // <<< ОБЯЗАТЕЛЬНО ДЛЯ GITHUB PAGES
   plugins: [react()],
+
   server: {
     port: 5173,
     hmr: {
-      overlay: false // Отключить overlay для уменьшения мерцаний
+      overlay: false
     }
   },
+
   build: {
     minify: 'esbuild',
     cssMinify: true,
@@ -22,7 +25,16 @@ export default defineConfig({
       }
     }
   },
+
   optimizeDeps: {
-    include: ['react', 'react-dom', 'gsap', 'framer-motion', 'lenis', 'three', 'postprocessing']
+    include: [
+      'react',
+      'react-dom',
+      'gsap',
+      'framer-motion',
+      'lenis',
+      'three',
+      'postprocessing'
+    ]
   }
 });
